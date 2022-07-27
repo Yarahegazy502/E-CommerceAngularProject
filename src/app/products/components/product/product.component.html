@@ -1,0 +1,18 @@
+<div class="shadow p-4">
+        <div class="product" >
+          <div class="img" routerLink="/details/{{data.id}}">
+          <img src="{{data.image}}" alt="img"/>
+        </div>
+        <div class="body">
+          <span class="price">$ {{data.price}}</span>
+          <h5>{{data.title}}</h5>
+          <!-- <p>{{data.description}}</p> -->
+        </div>
+          <button class="btn addToCart" (click)="add()">Add To Cart</button>
+          <div class="heart d-flex justify-content-center align-items-center shadow">
+            <a (click)="addToHeart()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+</svg></a>
+          </div>
+        </div>
+        </div>

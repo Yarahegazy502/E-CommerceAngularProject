@@ -1,0 +1,21 @@
+<div class="productDetails">
+  <div class="row ">
+    <div class="col-md-6">
+      <div class="d-flex align-items-center mt-5">
+        <label class="categories">Categories</label>
+        <select class="form-select" (change)="filterProducts($event)">
+          <option value="all">All Categories</option>
+          <option value="{{cat}}" *ngFor="let cat of categories">{{cat}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row g-3 mt-4">
+    <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let item of products">
+      <app-product [data]="item" (item)="addToCart($event)"></app-product>
+    </div>
+  </div>
+  <div *ngIf="loading">
+    <app-spinner></app-spinner>
+  </div>
+</div>

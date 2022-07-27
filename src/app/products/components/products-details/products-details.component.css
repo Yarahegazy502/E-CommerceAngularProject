@@ -1,0 +1,21 @@
+img{
+    width:100%;
+    height:400px
+}
+.productDetailsContent h5{
+  color:crimson;
+  font-weight:bold
+}
+.productDetailsContent .description{
+  color:#777;
+  line-height:1.9;
+  margin:20px 0
+}
+.productDetailsContent progress {
+  height:1.2rem;
+  vertical-align: middle;
+  margin:0 10px;
+}
+.productDetailsContent .rate{
+  color:crimson;
+}

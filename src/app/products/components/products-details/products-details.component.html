@@ -1,0 +1,20 @@
+<div>
+    <div class="row">
+      <div class="col-md-5">
+        <div>
+          <img src="{{data.image}}"/>
+        </div>
+      </div>
+      <div class="col-md-7 d-flex align-items-center">
+        <div class="productDetailsContent"> 
+          <h5>{{data.title}}</h5>
+          <p class="description">{{data.description}}</p>
+          <p><strong>Price</strong> : <span class="bg-danger p-2 text-light rounded">{{data.price}}</span></p>
+          <p><strong>Category</strong> : {{data.category}}</p>
+          <p><strong>Rate</strong> : <progress id="file" value="{{data.rating.rate}}" max="10"> </progress><small class="rate">{{data.rating.rate}}</small></p>
+          <p><strong>count</strong> : {{data.rating.count}}</p>
+
+        </div>
+      </div>
+    </div>
+</div>
